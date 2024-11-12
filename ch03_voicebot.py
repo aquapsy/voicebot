@@ -84,7 +84,8 @@ def main():
     # 사이드바 생성
     with st.sidebar:
         # Open AI API 키 입력받기
-        api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", value="", type="password")
+        OPENAI_API_KEY = "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"
+        api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", value=OPENAI_API_KEY, type="password")
 
         if api_key:
             # OpenAI 클라이언트 설정
