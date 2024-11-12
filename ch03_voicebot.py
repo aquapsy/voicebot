@@ -1,4 +1,3 @@
-### voice.py : 음성파일을 텍스트로 변환하고 챗봇구현
 import streamlit as st
 from audiorecorder import audiorecorder
 from openai import OpenAI
@@ -84,8 +83,7 @@ def main():
     # 사이드바 생성
     with st.sidebar:
         # Open AI API 키 입력받기
-        OPENAI_API_KEY = "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"
-        api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", value=OPENAI_API_KEY, type="password")
+        api_key = st.text_input(label="OPENAI API 키", placeholder="Enter Your API Key", value="", type="password")
 
         if api_key:
             # OpenAI 클라이언트 설정
